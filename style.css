@@ -1,0 +1,92 @@
+html{
+    font-size: 12px;
+}
+h2{
+    color: rgb(19, 67, 172);
+    font-size: 16px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 150px;
+    height: 15px;
+    margin: 7px 0px;
+    font-size: 12px;
+}
+button{
+    width: 150px;
+    height: 30px;
+    background-color: rgb(135, 222, 135);
+    border-style: none;
+    border-radius: 10px;
+    margin: 20px 0px;
+    font-size: 12px;
+}
+select{
+    width: 20px;
+    height: 20px;
+}
+.ejercicio-5 form, .ejercicio2 form div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.ejercicio-5 form input{
+    width: 30px;
+    border-style: none;
+    border-bottom-style:solid;
+    border-color: rgb(9, 255, 0);
+    padding-left: 10px;
+}
+.ejercicio-5 form label{
+    margin: 0px 5px
+}
+.ejercicio-5 form select{
+    margin: 0px 10px;
+    color: rgb(255, 17, 0);
+    border-style: none;
+}
+
+.styleRemove{
+    outline: none;
+}
+.ejercicio2 form label{
+    margin-right: 20px;
+}
+
+/* ejercicios alternativos */
+.tabla-boxeador{
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(4, 30px);
+}
+.tabla-boxeador p, .ejercicio9 .tabla-hora p{
+    height: 100%;
+    border: groove 2px rgb(182, 182, 219);
+    margin: 0px;
+    place-content: center;
+    display: grid;
+}
+.tabla-boxeador-peso{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.tabla-boxeador-peso label{
+    margin-right: 10px;
+}
+.ejercicio9 .tabla-hora{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: repeat(3, 30px);
+}
+
+/**/
+.inactive{
+    display: none;
+}

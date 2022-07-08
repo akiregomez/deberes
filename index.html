@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- <div class="ejercicios-lineales">
+      <h1>Ejercicios lineales</h1>
+      <section class="ejercicio 1">
+        <h2>Calcular el salario de un trabajador</h2>
+        <form action="">
+          <label for="">Ingrese el nombre del trabajador</label>
+          <input
+            id="nombre-trabajador"
+            type="text"
+            placeholder="Ej: Camilo Vargas"
+          />
+
+          <label for="">Ingrese las horas trabajadas</label>
+          <input id="horas-trabajadas" type="number" placeholder="Ej: 15" />
+
+          <label for="">Ingrese el valor por hora</label>
+          <input id="valor-hora" type="number" placeholder="Ej: 2.50" />
+
+          <button type="button" onclick="calcularSalarioTrabajador()">
+            Calcular salario
+          </button>
+
+          <div id="respuesta"></div>
+        </form>
+      </section>
+
+      <section class="ejercicio2">
+        <h2>
+          Dados 5 números de 5 cifras encontrar el 6 número de 5 cifras también
+          de la forma siguiente:
+        </h2>
+        <form action="">
+          <div>
+            <label for="">Primera serie</label>
+            <input id="serie1" type="number" />
+          </div>
+
+          <div>
+            <label for="">Segunda serie</label>
+            <input id="serie2" type="number" />
+          </div>
+
+          <div>
+            <label for="">Tercera serie</label>
+            <input id="serie3" type="number" />
+          </div>
+
+          <div>
+            <label for="">Cuarta serie</label>
+            <input id="serie4" type="number" />
+          </div>
+
+          <div>
+            <label for="">Quinta serie</label>
+            <input id="serie5" type="number" />
+          </div>
+        </form>
+        <button type="button" onclick="encontrarNumero()">
+          Encontrar valor
+        </button>
+        <div id="sextoValor"></div>
+      </section>
+
+      <section class="ejercicio 3">
+        <h2>Calcular el área de un trapecio</h2>
+        <h3>Ingrese los valores correspondientes para calcular el área</h3>
+        <form action="">
+          <label for="">Base menor</label>
+          <input id="base-menor" type="number" placeholder="4" />
+          <label for="">Base mayor</label>
+          <input id="base-mayor" type="number" placeholder="3" />
+          <label for="">Altura</label>
+          <input id="altura" type="number" placeholder="5" />
+
+          <button type="button" onclick="calcularArea()">Calcular área</button>
+          <div id="resp-area-trapecio"></div>
+        </form>
+      </section>
+
+      <section class="ejercicio 4">
+        <h2>
+          Un empresario decide heredar su terreno a sus 3 hijos, tomando como
+          referencia la cantidad de hijos, al mayor que tiene 6 hijos le otorga
+          el doble del menor, al que tiene 2 hijos le corresponde 125.2 mt2, al
+          menor le otorga el 27% del total del terreno. Calcular el total del
+          terreno y la cantidad que le corresponde a cada hijo. Realizar la
+          gráfica de cómo sería el terreno
+        </h2>
+        <button type="button" onclick="calcularTotalTerreno()">
+          Respuesta
+        </button>
+        <div id="respuestaTerreno"></div>
+      </section>
+
+      <section class="ejercicio-5">
+        <h2>5. Calcular el discriminante de la formula general.</h2>
+        <h3>Ingrese la ecuacion</h3>
+        <form action="">
+          <input
+            id="inputA"
+            type="number"
+            placeholder="10"
+            class="styleRemove"
+          />
+          <label for="">x2</label>
+
+          <input
+            id="inputB"
+            type="number"
+            placeholder="-5"
+            class="styleRemove"
+          />
+          <label for="">x</label>
+          <input
+            id="inputC"
+            type="number"
+            placeholder="2"
+            class="styleRemove"
+          />
+          <label for=""> = 0</label>
+        </form>
+
+        <button type="button" onclick="calcularDiscriminante()">
+          Calcular
+        </button>
+
+        <div id="restDiscriminante"></div>
+        <div id="restDiscriminanteOptions"></div>
+      </section>
+    </div>
+
+    <div class="ejercicios-alternativos">
+      <h1>Ejercicios alternativos</h1>
+      <section class="ejercicio6">
+        <h2>
+          El peso de un boxeador oscila entre 124 lbs y 140 lbs. Confeccione un
+          programa para precisar, conociendo su peso exacto, a que división
+          pertenece.
+        </h2>
+        <article class="tabla-boxeador">
+          <p class="table-part1">Division</p>
+          <p class="table-part2">Peso minimo</p>
+          <p class="table-part3">Peso maximo</p>
+          <p class="table-part4">53 kg</p>
+          <p class="table-part5">124 lbs</p>
+          <p class="table-part6">129 lbs</p>
+          <p class="table-part7">60 kg</p>
+          <p class="table-part8">130 lbs</p>
+          <p class="table-part9">137 lbs</p>
+          <p class="table-part10">63 kg</p>
+          <p class="table-part11">138 lbs</p>
+          <p class="table-part12">145 lbs</p>
+        </article>
+
+        <form action="" class="tabla-boxeador-peso">
+          <label for="">Ingrese su peso en libras: </label>
+          <input id="peso-en-libras" type="number" placeholder="Ej: 120" />
+        </form>
+        <button type="button" onclick="encontrarDivision()">
+          Encontrar division
+        </button>
+
+        <div id="respDisivion-boxeador"></div>
+      </section>
+
+      <section class="ejercicio7">
+        <h2>
+          Confeccione un programa para imprimir el mayor de tres números
+          diferentes y calcular la parte fraccionaria del menor en caso de que
+          este no sea un número entero.
+        </h2>
+        <form action="">
+          <label for="">Ingrese un numero</label>
+          <input type="number" placeholder="Ej: 50" id="numero1" />
+          <label for="">Ingrese un numero</label>
+          <input type="number" placeholder="Ej: 20" id="numero2" />
+          <label for="">Ingrese un numero</label>
+          <input type="number" placeholder="Ej: 100" id="numero3" />
+
+          <button type="button" onclick="calcularNumero()">Calcular</button>
+          <div id="respNumeroMayor"></div>
+          <div id="respNumeroMenor"></div>
+        </form>
+      </section>
+
+      <section class="ejercicio8">
+        <h2>
+          Una compañía dedicada al alquiler de automóviles cobra un monto fijo
+          de $300000 para los primeros 300 km de recorrido. Para más de 300 km y
+          hasta 1000 km, cobra un monto adicional de $ 15.000 por cada kilómetro
+          en exceso sobre 300. Para más de 1000 km cobra un monto adicional de $
+          10.000 por cada kilómetro en exceso sobre 1000. Los precios ya
+          incluyen el 20% del impuesto general a las ventas, IVA. Diseñe un
+          programa que determine el monto a pagar por el alquiler de un vehículo
+          y el monto incluido del impuesto.
+        </h2>
+
+        <form action="">
+          <label for="">Ingrese los kilometros recorridos</label>
+          <input
+            id="kilometrosRecorridos"
+            placeholder="Ej: 5000"
+            type="number"
+          />
+        </form>
+        <button onclick="montoApagar()">Respuesta</button>
+
+        <div id="respKilometros"></div>
+      </section>
+
+      <section class="ejercicio9">
+        <h2>Calcular la hora al siguiente segundo. Por ejemplo:</h2>
+        <div class="tabla-hora">
+          <p>Hora dada</p>
+          <p>Hora al siguiente segundo</p>
+          <p>18h 59 min 59 seg</p>
+          <p>19 h 0 min 0 seg</p>
+          <p>8h 10min 30 seg</p>
+          <p>8h 10 min 31 seg</p>
+        </div>
+        <br />
+        <button type="button" onclick="calcularHora()">Calcular</button>
+        <div id="mostrarHora"></div>
+      </section>
+
+      <section class="ejercicio10">
+        <h2>
+          En un mapa a escala se tienen las siguientes coordenadas de dos puntos
+          geográficos A(x1,y1) y B(x2,y2) respectivamente. Confeccione un
+          programa que permita:
+        </h2>
+        <h3>
+          - Calcular e imprimir la distancia que existe entre los dos puntos
+        </h3>
+        <h3>
+          - Determinar cual de los dos puntos está mas cerca de un punto C de
+          coordenadas(x3,y3)
+        </h3>
+      </section>
+    </div> -->
+
+    <div class="ejercicios-repeticion">
+      <h1>Repeticion</h1>
+      <section class="ejercicio-11">
+        <h2>
+          En una gasolinera se instala un detector para controlar la cantidad de
+          litros de gasolina que va despachando el pistero. Se conoce que al
+          comenzar el turo de trabajo en el tanque de gasolina hay N litros.
+          Confeccione un programa para conocer constantemente:
+          <ul>
+            <li>La cantidad de vehículos atendidos</li>
+            <li>
+              La cantidad de dinero recaudado si cada litro de gasolina especial
+              cuesta $1,25 ctvos. de dólar
+            </li>
+            <li>
+              Cuál es la mayor cantidad de gasolina despachada a un vehículo
+            </li>
+          </ul>
+        </h2>
+
+        <form action="">
+          <label for="">Cantidad de litros total</label>
+          <input type="number" placeholder="Ej: 1000" id="totalCombustible" />
+          <button type="button" onclick="guardarStock()">Guardar</button>
+        </form>
+
+        <form action="">
+          <label for="">Litros despachados</label>
+          <input id="litrosDespachados" type="number" />
+          <button type="button" onclick="guardarInfoGasolinera()">
+            Calcular
+          </button>
+        </form>
+
+        <div id="rtaGasolinera1"></div>
+        <div id="rtaGasolinera2"></div>
+        <div id="rtaGasolinera3"></div>
+        <div id="rtaGasolinera4"></div>
+      </section>
+
+      <section class="ejercicio-12">
+        <h2>
+          Confeccione un programa que lea un número en base 10 y lo imprima en
+          binario
+        </h2>
+        <form action="">
+          <label for="Ingresa un numero">Ingresa un numero</label>
+          <input type="number" name="" id="numeroBaseDiez" />
+        </form>
+
+        <button onclick="encontrarBinario()">Calcular binario</button>
+        <div id="rtaBinario"></div>
+      </section>
+
+      <!-- <section class="ejercicio-13">
+        <h2></h2>
+      </section>
+      <section class="ejercicio-14">
+        <h2></h2>
+      </section>
+      <section class="ejercicio-15">
+        <h2></h2>
+      </section> -->
+    </div>
+
+    <script src="/nodes.js"></script>
+    <script src="./operaciones.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
